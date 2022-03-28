@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+body{
+	height: 100%;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.gap{
+	height: 10vh;
+}
+.main-section{
+	padding: 65px 25px 0 25px;
+	color: #444444;
+	height: 100vh;
+}
+.center{
+	left: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+.column{
+	float: left;
+	width: 50%;
+}
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.heightspace{
+	height: 40px;
+}
+.widthspace{
+	width: 25px;
+}
+.image img{
+	display: flex;
+	margin: auto;
+	max-width: 250px;
+	min-height: 250px;	
+	float: center;
+}
+.h1{
+	font-size: bold;
+	color: #404040;
+}
+.h2{
+	font-size: 30px;
+	color: grey;
+}
+.text_center{
+	text-align: center;
+}
+.subtextstyle{
+	color: grey;
+	padding-left: 40px;
+	margin-left: 60px;	
+}
+/*Button CSS*/
+.formbutton{
+	width: 100%;
+	border: none;
+	opacity: 0.9;
+	padding: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	background-color: #047bfc;
+}
+.primarybutton{
+	width: 185px;
+	color: white;
+	height: 45px;
+	padding: 10px;
+	font-size: medium;
+	font-weight: bold;
+	border-width: 0px;
+	border-radius: 5px;
+	background-color: #047bfc;
+}
+.primarybutton:hover{
+	opacity: 0.8;
+}
+.secoundarybutton{
+	width: 185px;
+	height: 45px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: medium;
+	border-radius: 5px;
+	border-width: 0;
+	background-color: #8C8C8C;
+}
+.secoundarybutton:hover{
+	opacity: 0.8;	
+}
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=password],
+select{
+	width: 100%;
+	padding: 15px 0 15px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin: 15px 0 5px 0;
+	background: white;
+}
+input[type=file]{
+	padding: 0 0 25px 0;
+}
+input[type=date]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus,
+select:focus{
+	outline: none;
+	background-color: white;
+}
+.card{
+	z-index: 1;
+	padding: 20px;
+	color: white;
+	max-width: 350px;
+	min-height: 250px;
+	position: relative;
+	border-radius: 10px;
+	backdrop-filter: blur(6px) saturate(200%);
+	background-color: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(209, 213, 219, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	-webkit-backdrop-filter: blur(6px) saturate(200%);
+}
+.form_center{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+ 	width: 50%;
+}
+.form_row{
+	display: flex;
+}
+.form_column{
+	width: 50%;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		width: 250px;
+	}
+	.gap{
+		height: 5vh;
+	}
+	.main-section{
+		padding: 65px 15px 15px 15px;
+	}
+	.column {
+	  width: 100%;
+	}
+	.primarybutton{
+		font-size: medium;
+	}
+}

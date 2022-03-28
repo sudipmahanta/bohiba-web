@@ -1,0 +1,169 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+i{
+  font-size: 30px;
+  color: #047bfc;
+}
+
+.formpopup {
+  display: none;
+  position: absolute;
+}
+
+.formbutton{
+	width: 100%;
+	border: none;
+	opacity: 0.9;
+	padding: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	background-color: #047bfc;
+}
+
+.formbutton:hover {
+	opacity: 1;
+}
+
+.formbutton1{
+	width: 100%;
+	border: none;
+	opacity: 0.9;
+	padding: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	background-color: grey;
+}
+
+.formbutton1:hover {
+	opacity: 1;
+}
+
+.primarybutton{
+	width: 175px;
+	color: white;
+	height: 45px;
+	padding: 10px;
+	font-size: 16px;
+	border-width: 0px;
+	border-radius: 5px;
+	background-color: #047bfc;
+}
+
+.primarybutton:hover{
+	opacity: 0.8;
+}
+
+/*Form CSS*/
+.card{
+	z-index: 1;
+	padding: 30px;
+	top: -70px;
+	position: relative;
+	min-width: max-content;
+	min-height: fit-content;
+	border-radius: 10px;
+	backdrop-filter: blur(16px) saturate(200%);
+	-webkit-backdrop-filter: blur(16px) saturate(200%);
+	background-color: rgba(255, 255, 255, 0.86);
+	border: 1px solid rgba(209, 213, 219, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.cardBorder{
+	border: 1px solid grey;
+	padding: 25px;
+	border-radius:10px;
+}
+
+.detail{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.formcenter{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.formrow{
+	display: flex;
+}
+
+.formcolumn{
+	width: 50%;
+	overflow: hidden;
+}
+	
+input[type=text],
+input[type=email],
+input[type=date],
+select{
+	width: 100%;
+	padding: 15px 15px 15px 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin: 0px 0px 10px 0px;
+	background: white;
+}
+
+input[type=file]{
+	padding: 0 0 25px 0;
+}
+
+input[type=date]:focus,
+input[type=text]:focus,
+input[type=email]:focus
+{
+	outline: none;
+	background-color: white;
+}
+
+input[type=checkbox]{
+  float: left;
+  margin: 5px 0 0 0;
+}
+
+/*Table CSS*/
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+th{
+	font-size: 14px;
+	color: white;
+	font-weight: 400;
+	background-color: #047bfc;
+}
+td a{
+	text-decoration: none;
+}
+th, td {
+  padding: 5px;
+  align-items: center;
+  white-space: nowrap;
+}
+tr, td{
+	border: 0.5px solid white;
+	font-size: 12px;
+	text-align: center;
+	white-space: nowrap;
+}
+tr:nth-child(odd) {
+    background-color: #c9e3ff;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.column {
+    width: 50%;
+}
+.row:after {
+	content: "";
+    margin: 10px;
+    display: table;
+	clear: both;
+}
+.main-section{
+	padding: 65px 25px 0 25px;
+	height: 100vh;
+	color: #444444;
+}
+.greeting{
+	font-size: x-large;
+	font-weight: 400;
+}
+.hl{
+	border-bottom: 1px solid lightgrey;
+	padding: 15px 0 15px 0;
+}
+@media screen and (max-width: 480px) {
+	.main-section{
+		padding: 65px 15px;
+	}
+	.column {
+    	width: 100%;
+  	}
+  	.pcenter{
+    	top: 0;
+    	padding: 0;
+  	}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pavatar {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 1px solid #ff9a47;
+}
+.column .img-changephoto{
+	padding: 10px;
+	display: inline-block;
+}
+.column .change-photo{
+	text-align: center;
+	margin: 5px;
+	font-size: small;
+	color: black;
+}
+.pcenter{
+	margin-top: 50px;
+}
+.column h1{
+	font-weight: normal;
+}
+.row-ud::after{
+	padding: 10px;
+	content: "";
+	clear: both;
+	display: table;
+}
+.column .greeting i{
+	font-size: large;
+	color: #ff9a47;
+}
+.column .personal-details{
+	font-size: medium;
+	color: grey;
+}

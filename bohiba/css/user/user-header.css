@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.center {
+	left: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+.column {
+	float: left;
+	width: 50%;
+}
+/* Clear floats after the columns */
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav {
+	width: 100%;
+	height: 65px;
+	z-index: 100;
+	position: fixed;
+	overflow: hidden;
+	padding: 0px 16px;
+	line-height: 65px;
+	display: inline-block;
+	background-color: #F5F5F5;
+    box-shadow: -5px 5px 5px -9px black;
+}
+nav .logo p {
+	float: left;
+	color: #ff9a47;
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+nav ul {
+	float: right;
+	margin-right: 16px;
+}
+nav ul li {
+	line-height: 65px;
+	margin: 0 0 0 45px;
+	display: inline-block;
+}
+nav ul li a {
+	color: black;
+	font-size: small;
+	cursor: pointer;
+}
+nav ul li a:hover,
+nav ul li a:active {
+	color: #ff9a47;
+}
+.logout{
+	display: none;
+	cursor: pointer;
+}
+.profile {
+	visibility: visible;
+	cursor: pointer;
+}
+.avatar {
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+	border-radius: 50%;
+	border: 1px solid #ff9a47;
+}
+nav ul li a button{
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	display: inline-block;
+	background-color: #F5F5F5;
+	border: none;
+}
+.humberg {
+	float: right;
+	display: none;
+	color: grey;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 65px;
+	margin: 0 16px 0 0;	
+}
+.humberg:hover {
+	color: #ff9a47;
+}
+#check {
+	display: none;
+}
+
+@media (max-width: 720px) {
+	.column {
+		width: 100%;
+	}
+	.humberg {
+		display: block;
+	}
+	ul {
+		top: 65px;
+		z-index: 1;
+		left: -100%;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		line-height: 30px;
+		text-align: center;
+		background: white;
+		transition: all 0.5ms;
+	}
+	nav ul li {
+		margin: 0;
+		display: block;
+	}
+	nav ul li a {
+		font-size: small;
+	}
+	a:hover, a:active {
+		color: #ff9a47;
+	}
+	#check:checked ~ul {
+		left: 0;
+	}
+	nav ul li .userdata {
+		display: block;
+	}
+	.logout{
+		display: block;
+	}
+	.profile {
+		visibility: hidden;
+	}
+}
+.h-line{
+	border-bottom: 1.5px solid lightgrey;
+	margin: 10px 0 10px 0;
+}
+.vl {
+	border-left: 1.5px solid lightgrey;
+}
+#dropdown {
+	z-index: 100;
+	top: 65px;
+	right: 15px;
+	margin: 5px;
+	display: none;
+	position: fixed;
+	cursor: pointer;
+	width: fit-content;
+	background-color: #F5F5F5;
+	box-shadow: 0px 1px 1px 1px lightgray;
+}
+#dropdown ul .hline{
+	border-bottom: 1.5px solid lightgrey;
+}
+#dropdown ul .head li{
+	font-size: medium;
+	color: black;
+	font-weight: normal;
+	margin: 10px;
+}
+#dropdown ul{
+	color: black;
+	cursor: pointer;
+}
+#dropdown ul{
+	display: block;
+}
+#dropdown ul .sub-head a{
+	float: none;
+  	color: black;
+	display: block;
+  	padding: 8px 0 8px 0;
+  	text-decoration: none;
+  	text-align: left;
+}
+#dropdown ul .sub-head a:hover{
+	background-color: #ffe7d4;
+}
+#dropdown ul .sub-head .head a{
+	font-weight: normal;
+	font-size: large;
+}
+#dropdown ul .sub-head a,
+ul .sub-head span{
+	font-size: small;
+	color: black;
+}
+ul .sub-head a i{
+	font-size: medium;
+	padding: 5px;
+	color: black;
+}
